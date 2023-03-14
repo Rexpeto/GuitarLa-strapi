@@ -1,18 +1,17 @@
 {
   "kind": "collectionType",
-  "collectionName": "guitarras",
+  "collectionName": "posts",
   "info": {
-    "singularName": "guitarra",
-    "pluralName": "guitarras",
-    "displayName": "guitarras",
-    "description": ""
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "post"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "nombre": {
+    "titulo": {
       "type": "string",
       "required": true
     },
@@ -20,21 +19,16 @@
       "type": "richtext",
       "required": true
     },
-    "precio": {
-      "type": "integer",
-      "required": true
-    },
     "imagen": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "type": "media",
+      "multiple": false
     },
     "url": {
       "type": "uid",
-      "targetField": "nombre"
+      "targetField": "titulo"
     }
   }
 }
